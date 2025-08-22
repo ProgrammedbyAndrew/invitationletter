@@ -27,9 +27,11 @@ a { text-decoration:none; }
 /* Brand palette: Black / White / Red */
 .brand-bg-dark { background:#000000 !important; }
 .brand-panel { background:#0a0a0a !important; }
-.brand-accent { color:#e41e24 !important; }
-.btn-red { background:#e41e24 !important; color:#ffffff !important; }
-.btn-red-outline { background:#000000 !important; color:#ffffff !important; border:1px solid #3a3a3a !important; }
+.brand-accent { color:#e41e24 !important; } /* Red for brand */
+.btn-primary { background:#e41e24 !important; color:#ffffff !important; border-radius:12px; padding:12px 24px; font-size:16px; font-weight:bold; text-decoration:none; display:inline-block; transition:background 0.3s ease; }
+.btn-primary:hover { background:#b31d20 !important; } /* Darker red on hover */
+.btn-outline { background:#ffffff !important; color:#e41e24 !important; border:2px solid #e41e24; border-radius:12px; padding:10px 22px; font-size:16px; font-weight:bold; text-decoration:none; display:inline-block; transition:color 0.3s ease, border-color 0.3s ease; }
+.btn-outline:hover { color:#b31d20 !important; border-color:#b31d20 !important; }
 /* Global font (high readability) */
 body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI", sans-serif !important; }
 /* Readability utilities */
@@ -38,17 +40,18 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 .text-muted { color:#9c9c9c !important; }
 .panel-dark { background:#0a0a0a !important; }
 .rule { height:1px; line-height:1px; background:#1e1e1e; }
-/* Switch (smaller version) */
+/* Switch (solar-themed) */
 #woft-toggle { display:none; }
 .woft-switchplate { background:#0b0b0b; border:1px solid #2b2b2b; border-radius:10px; padding:8px; box-shadow:0 4px 12px rgba(0,0,0,.45); }
 .woft-switch-label { display:inline-block; cursor:pointer; }
 .woft-switch-slot { width:60px; background:#111111; border:1px solid #3a3a3a; border-radius:30px; padding:4px; }
 .woft-switch-knob { width:22px; height:22px; border-radius:11px; background:#2b2b2b; box-shadow:inset 0 1px 3px rgba(0,0,0,.5); transition:transform .25s ease; }
-#woft-toggle:checked ~ .woft-tray .woft-switch-knob { transform:translateX(32px); background:#e41e24; box-shadow:0 0 8px rgba(228,30,36,.55); }
+#woft-toggle:checked ~ .woft-tray .woft-switch-knob { transform:translateX(32px); background:#e41e24; box-shadow:0 0 8px rgba(228,30,36,.55); } /* Red for brand */
+.woft-switch-label p { margin:0; font-size:12px; letter-spacing:.08em; color:#e41e24; text-transform:uppercase; font-weight:bold; } /* Red for brand */
 /* Mini PARK v2 (email-safe, single truck version) */
 .scene-wrap { max-width:560px; margin:0 auto; }
 .park-frame { background:#000; border:1px solid #2b2b2b; border-radius:14px; padding:16px; }
-.park-title { font-size:12px; letter-spacing:.08em; color:#e41e24; text-transform:uppercase; margin:0 0 8px 0; }
+.park-title { font-size:12px; letter-spacing:.08em; color:#e41e24; text-transform:uppercase; margin:0 0 8px 0; } /* Red for brand */
 /* Truck representation */
 .truck-slot { width:60px; height:30px; background:#141414; border:1px solid #2b2b2b; border-radius:4px; position:relative; margin:0 5px; display:inline-block; }
 .cab-r, .cab-l { width:10px; height:10px; background:#111; border:1px solid #3a3a3a; border-radius:2px; position:absolute; top:4px; }
@@ -64,11 +67,11 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 .roof-panel { width:18px; height:12px; background:#0e0e0e; border:1px solid #2b2b2b; }
 /* Connector + toggle lighting */
 .connector { width:80%; height:2px; background:#1f1f1f; margin:10px auto; }
-#woft-toggle:checked ~ .woft-tray .roof-panel { border-color:#e41e24; background:#151515; transition:border-color 0.5s ease, background 0.5s ease; }
-#woft-toggle:checked ~ .woft-tray .truck-slot { border-color:#e41e24; box-shadow:0 0 8px rgba(228,30,36,.4); transition:border-color 0.5s ease 0.5s, box-shadow 0.5s ease 0.5s; }
-#woft-toggle:checked ~ .woft-tray .cab-r, #woft-toggle:checked ~ .woft-tray .cab-l, #woft-toggle:checked ~ .woft-tray .window { border-color:#e41e24; transition:border-color 0.5s ease 0.5s; }
-#woft-toggle:checked ~ .woft-tray .connector { background:#e41e24; box-shadow:0 0 10px rgba(228,30,36,.45); transition:background 0.5s ease 0.5s, box-shadow 0.5s ease 0.5s; }
-#woft-toggle:checked ~ .woft-tray .wheel { border-color:#e41e24; box-shadow:0 0 4px rgba(228,30,36,.4); transition:border-color 0.5s ease 0.5s, box-shadow 0.5s ease 0.5s; }
+#woft-toggle:checked ~ .woft-tray .roof-panel { border-color:#e41e24; background:#151515; transition:border-color 0.5s ease, background 0.5s ease; } /* Red for brand */
+#woft-toggle:checked ~ .woft-tray .truck-slot { border-color:#e41e24; box-shadow:0 0 8px rgba(228,30,36,.4); transition:border-color 0.5s ease 0.5s, box-shadow 0.5s ease 0.5s; } /* Red for brand */
+#woft-toggle:checked ~ .woft-tray .cab-r, #woft-toggle:checked ~ .woft-tray .cab-l, #woft-toggle:checked ~ .woft-tray .window { border-color:#e41e24; transition:border-color 0.5s ease 0.5s; } /* Red for brand */
+#woft-toggle:checked ~ .woft-tray .connector { background:#e41e24; box-shadow:0 0 10px rgba(228,30,36,.45); transition:background 0.5s ease 0.5s, box-shadow 0.5s ease 0.5s; } /* Red for brand */
+#woft-toggle:checked ~ .woft-tray .wheel { border-color:#e41e24; box-shadow:0 0 4px rgba(228,30,36,.4); transition:border-color 0.5s ease 0.5s, box-shadow 0.5s ease 0.5s; } /* Red for brand */
 /* Flicker animation for trucks */
 @keyframes flicker {
   0% { opacity: 1; }
@@ -100,8 +103,8 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 <td class="px-24 py-20" style="padding:24px 32px; vertical-align:middle;">
 <img src="assets/logo.png" width="172" alt="World Food Trucks" style="max-width:172px;">
 </td>
-<td class="px-24 py-20 center" style="padding:24px 32px; text-align:right; color:#ffffff; font-size:13px;">
-                    <strong>Solar Switch Ceremony • Powered by a $1.3M Solar Farm</strong>
+<td class="px-24 py-20 center" style="padding:24px 32px; text-align:right;">
+<h3 style="margin:0; font-size:16px; color:#e41e24; font-weight:bold; text-transform:uppercase; letter-spacing:0.1em; text-shadow: 1px 1px 2px rgba(228, 30, 36, 0.5);">Solar Switch Ceremony • Powered by a $1.3M Solar Farm</h3>
 </td>
 </tr>
 </table>
@@ -111,7 +114,7 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 <tr>
 <td style="background:#0a0a0a;">
 <!--[if gte mso 9]>
-              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:280px;">
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:280px;">
                 <v:fill type="frame" src="assets/pic.jpg" color="#0a0a0a"/>
                 <v:textbox inset="0,0,0,0">
               <![endif]-->
@@ -121,14 +124,14 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 <tr>
 <td class="px-24" style="padding:42px 32px 48px 32px; text-align:left;">
 <h1 style="margin:0; font-size:40px; line-height:1.1; color:#ffffff; letter-spacing:.3px;">Save the Date</h1>
-<p style="margin:10px 0 0 0; font-size:16px; line-height:1.7; color:#f2f2f2;">World Food Trucks, the largest permanent food truck park in the USA, has gone solar!</p>
-<p style="margin:10px 0 0 0; font-size:16px; line-height:1.7; color:#f2f2f2;">Join us as we unveil our groundbreaking solar farm powering 75% of our park and 80+ food trucks. This milestone marks a bold leap toward sustainability, community investment, and clean energy.</p>
+<p style="margin:10px 0 0 0; font-size:16px; line-height:1.5; color:#f2f2f2;">World Food Trucks, the largest permanent food truck park in the USA, has gone solar!</p>
+<p style="margin:10px 0 0 0; font-size:16px; line-height:1.5; color:#f2f2f2;">Join us as we unveil our groundbreaking solar farm powering 75% of our park and 80+ food trucks. This milestone marks a bold leap toward sustainability, community investment, and clean energy.</p>
 </td>
 </tr>
 </table>
 </div>
 </div>
-<!--[if gte mso 9]></v:textbox></v:rect><![endif]-->
+<!--[if gte mso 9]></v:textbox></v:roundrect><![endif]-->
 </td>
 </tr>
 <!-- Event Details + Stats -->
@@ -150,15 +153,36 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 <!-- Right column -->
 <td class="stack" width="50%" style="vertical-align:top;">
 <p style="margin:0 0 16px 0; color:#f2f2f2; font-size:16px;">Come celebrate with our partners, business and community leaders. Enjoy the international taste of the World Food Trucks cuisine and network over craft beer and cocktails.</p>
-<p style="margin:0 0 16px 0; color:#f2f2f2; font-size:16px;">Formal invitation with full details to follow.</p>
+<p style="margin:0 0 25px 0; color:#f2f2f2; font-size:16px;">Formal invitation with full details to follow.</p>
+<!-- Add to Calendar Button -->
 <!--[if mso]>
-                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="ICS_LINK" style="height:44px;v-text-anchor:middle;width:240px;" arcsize="10%" stroke="f" fillcolor="#e41e24">
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://www.google.com/calendar/render?action=TEMPLATE&text=World+Food+Trucks+Solar+Farm+Inauguration+and+Cocktail+Reception&dates=20251030T200000Z/20251030T220000Z&details=Join+us+as+we+unveil+our+groundbreaking+solar+farm+powering+75%25+of+our+park+and+80%2B+food+trucks.+This+milestone+marks+a+bold+leap+toward+sustainability%2C+community+investment%2C+and+clean+energy.+Come+celebrate+with+our+partners%2C+business+and+community+leaders.+Enjoy+the+international+taste+of+the+World+Food+Trucks+cuisine+and+network+over+craft+beer+and+cocktails.&location=5805+W.+Irlo+Bronson+Memorial+Hwy%2C+Kissimmee%2C+FL+34746&sf=true&output=xml" style="height:50px;v-text-anchor:middle;width:220px;" arcsize="15%" stroke="f" fillcolor="#e41e24">
                       <w:anchorlock/>
-                      <center style="color:#ffffff;font-size:14px;font-weight:bold;">Add to Calendar (.ics)</center>
+                      <center style="color:#ffffff;font-size:16px;font-weight:bold;">Add to Calendar</center>
                     </v:roundrect>
                     <![endif]-->
 <!--[if !mso]><!-- -->
-<a href="ICS_LINK" target="_blank" class="btn-red" style="display:inline-block; font-weight:700; font-size:14px; line-height:44px; height:44px; border-radius:6px; padding:0 18px;">Add to Calendar (.ics)</a>
+<a href="https://www.google.com/calendar/render?action=TEMPLATE&text=World+Food+Trucks+Solar+Farm+Inauguration+and+Cocktail+Reception&dates=20251030T200000Z/20251030T220000Z&details=Join+us+as+we+unveil+our+groundbreaking+solar+farm+powering+75%25+of+our+park+and+80%2B+food+trucks.+This+milestone+marks+a+bold+leap+toward+sustainability%2C+community+investment%2C+and+clean+energy.+Come+celebrate+with+our+partners%2C+business+and+community+leaders.+Enjoy+the+international+taste+of+the+World+Food+Trucks+cuisine+and+network+over+craft+beer+and+cocktails.&location=5805+W.+Irlo+Bronson+Memorial+Hwy%2C+Kissimmee%2C+FL+34746&sf=true&output=xml" target="_blank" class="btn-primary" style="display:block; font-weight:700; font-size:16px; line-height:50px; height:50px; border-radius:15px; padding:0 24px; text-decoration:none; margin-bottom:15px; width:220px; text-align:center;">Add to Calendar</a>
+<!--<![endif]-->
+<!-- RSVP Button (Active but placeholder) -->
+<!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:50px;v-text-anchor:middle;width:220px;" arcsize="15%" stroke="f" fillcolor="#e41e24">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-size:16px;font-weight:bold;">RSVP</center>
+                    </v:roundrect>
+                    <![endif]-->
+<!--[if !mso]><!-- -->
+<a href="#" target="_blank" class="btn-primary" style="display:block; font-weight:700; font-size:16px; line-height:50px; height:50px; border-radius:15px; padding:0 24px; text-decoration:none; margin-bottom:15px; width:220px; text-align:center;">RSVP</a>
+<!--<![endif]-->
+<!-- Questions Button -->
+<!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="mailto:info@worldfoodtrucks.com" style="height:50px;v-text-anchor:middle;width:220px;" arcsize="15%" stroke="f" fillcolor="#e41e24">
+                      <w:anchorlock/>
+                      <center style="color:#ffffff;font-size:16px;font-weight:bold;">Questions?</center>
+                    </v:roundrect>
+                    <![endif]-->
+<!--[if !mso]><!-- -->
+<a href="mailto:info@worldfoodtrucks.com" target="_blank" class="btn-primary" style="display:block; font-weight:700; font-size:16px; line-height:50px; height:50px; border-radius:15px; padding:0 24px; text-decoration:none; width:220px; text-align:center;">Questions?</a>
 <!--<![endif]-->
 </td>
 </tr>
@@ -269,7 +293,7 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 <td align="center">
 <div class="woft-switch-slot"><div class="woft-switch-knob"></div></div>
 <div style="height:8px;"></div>
-<p style="margin:0; font-size:12px; letter-spacing:.08em; color:#e41e24; text-transform:uppercase;">Flip the Solar Switch</p>
+<p style="margin:0; font-size:12px; letter-spacing:.08em; color:#e41e24; text-transform:uppercase; font-weight:bold;">Flip the Solar Switch</p>
 </td>
 </tr>
 </table>

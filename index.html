@@ -64,7 +64,7 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 .building { background:#2a2a2a; border:1px solid #2b2b2b; border-radius:10px; padding:8px; text-align:center; }
 .roof-table { border-collapse:separate; border-spacing:4px; margin:0 auto; }
 .roof-cell { width:18px; height:12px; }
-.roof-panel { width:18px; height:12px; background:#2a2a2a; border:1px solid #2b2b2b; }
+.roof-panel { width:18px; height:12px; background:#1e1e1e; border:1px solid #2b2b2b; }
 /* Connector + toggle lighting */
 .connector { width:80%; height:2px; background:#1f1f1f; margin:10px auto; }
 #woft-toggle:checked ~ .woft-tray .roof-panel { border-color:#e41e24; background:#151515; transition:border-color 0.5s ease, background 0.5s ease; } /* Red for brand */
@@ -298,7 +298,8 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 </tr>
 </table>
 </label>
-<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="text-decoration:none; display:block;" aria-label="Solar farm details"><div class="building">
+<div class="building">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" aria-label="Solar farm details" style="display:block; text-decoration:none; color:inherit;">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="roof-table">
 <tr>
 <td class="roof-cell"><div class="roof-panel"></div></td>
@@ -326,7 +327,8 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 </tr>
 </table>
 <p class="text-muted" style="margin:8px 0 0 0; font-size:11px;">Visitors Flea Market — Solar Rooftop</p>
-</div></a>
+</a>
+</div>
 </td>
 </tr>
 </table>

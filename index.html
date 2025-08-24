@@ -25,8 +25,8 @@ a { text-decoration:none; }
 .center { text-align:center!important; }
     }
 /* Brand palette: Black / White / Red */
-.brand-bg-dark { background:#000000 !important; }
-.brand-panel { background:#0a0a0a !important; }
+.brand-bg-dark { background:#1a1a1a !important; }
+.brand-panel { background:#232323 !important; }
 .brand-accent { color:#e41e24 !important; } /* Red for brand */
 .btn-primary { background:#e41e24 !important; color:#ffffff !important; border-radius:12px; padding:12px 24px; font-size:16px; font-weight:bold; text-decoration:none; display:inline-block; transition:background 0.3s ease; }
 .btn-primary:hover { background:#b31d20 !important; } /* Darker red on hover */
@@ -38,33 +38,33 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 .text-primary { color:#f2f2f2 !important; }
 .text-secondary { color:#c9c9c9 !important; }
 .text-muted { color:#9c9c9c !important; }
-.panel-dark { background:#0a0a0a !important; }
+.panel-dark { background:#232323 !important; }
 .rule { height:1px; line-height:1px; background:#1e1e1e; }
 /* Switch (solar-themed) */
 #woft-toggle { display:none; }
-.woft-switchplate { background:#0b0b0b; border:1px solid #2b2b2b; border-radius:10px; padding:8px; box-shadow:0 4px 12px rgba(0,0,0,.45); }
+.woft-switchplate { background:#2a2a2a; border:1px solid #2b2b2b; border-radius:10px; padding:8px; box-shadow:0 4px 12px rgba(0,0,0,.45); }
 .woft-switch-label { display:inline-block; cursor:pointer; }
-.woft-switch-slot { width:60px; background:#111111; border:1px solid #3a3a3a; border-radius:30px; padding:4px; }
+.woft-switch-slot { width:60px; background:#2c2c2c; border:1px solid #3a3a3a; border-radius:30px; padding:4px; }
 .woft-switch-knob { width:22px; height:22px; border-radius:11px; background:#2b2b2b; box-shadow:inset 0 1px 3px rgba(0,0,0,.5); transition:transform .25s ease; }
 #woft-toggle:checked ~ .woft-tray .woft-switch-knob { transform:translateX(32px); background:#e41e24; box-shadow:0 0 8px rgba(228,30,36,.55); } /* Red for brand */
 .woft-switch-label p { margin:0; font-size:12px; letter-spacing:.08em; color:#e41e24; text-transform:uppercase; font-weight:bold; } /* Red for brand */
 /* Mini PARK v2 (email-safe, single truck version) */
 .scene-wrap { max-width:560px; margin:0 auto; }
-.park-frame { background:#000; border:1px solid #2b2b2b; border-radius:14px; padding:16px; }
+.park-frame { background:#232323; border:1px solid #2b2b2b; border-radius:14px; padding:16px; }
 .park-title { font-size:12px; letter-spacing:.08em; color:#e41e24; text-transform:uppercase; margin:0 0 8px 0; } /* Red for brand */
 /* Truck representation */
-.truck-slot { width:60px; height:30px; background:#141414; border:1px solid #2b2b2b; border-radius:4px; position:relative; margin:0 5px; display:inline-block; }
-.cab-r, .cab-l { width:10px; height:10px; background:#111; border:1px solid #3a3a3a; border-radius:2px; position:absolute; top:4px; }
+.truck-slot { width:60px; height:30px; background:#2a2a2a; border:1px solid #2b2b2b; border-radius:4px; position:relative; margin:0 5px; display:inline-block; }
+.cab-r, .cab-l { width:10px; height:10px; background:#2c2c2c; border:1px solid #3a3a3a; border-radius:2px; position:absolute; top:4px; }
 .cab-r { right:4px; } .cab-l { left:4px; }
-.window { width:20px; height:10px; background:#0a0a0a; border:1px solid #3a3a3a; position:absolute; top:4px; left:20px; }
-.wheel { width:6px; height:6px; background:#0a0a0a; border:1px solid #3a3a3a; border-radius:50%; position:absolute; bottom: -4px; }
+.window { width:20px; height:10px; background:#262626; border:1px solid #3a3a3a; position:absolute; top:4px; left:20px; }
+.wheel { width:6px; height:6px; background:#262626; border:1px solid #3a3a3a; border-radius:50%; position:absolute; bottom: -4px; }
 .left-wheel { left:4px; }
 .right-wheel { right:4px; }
 /* Solar rooftop building (small grid) */
-.building { background:#0b0b0b; border:1px solid #2b2b2b; border-radius:10px; padding:8px; text-align:center; }
+.building { background:#2a2a2a; border:1px solid #2b2b2b; border-radius:10px; padding:8px; text-align:center; }
 .roof-table { border-collapse:separate; border-spacing:4px; margin:0 auto; }
 .roof-cell { width:18px; height:12px; }
-.roof-panel { width:18px; height:12px; background:#0e0e0e; border:1px solid #2b2b2b; }
+.roof-panel { width:18px; height:12px; background:#2a2a2a; border:1px solid #2b2b2b; }
 /* Connector + toggle lighting */
 .connector { width:80%; height:2px; background:#1f1f1f; margin:10px auto; }
 #woft-toggle:checked ~ .woft-tray .roof-panel { border-color:#e41e24; background:#151515; transition:border-color 0.5s ease, background 0.5s ease; } /* Red for brand */
@@ -81,23 +81,23 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 #woft-toggle:checked ~ .woft-tray .truck-slot { animation: flicker 0.3s ease 0.5s; }
 </style>
 </head>
-<body width="100%" style="margin:0; padding:0; background:#000000;">
+<body width="100%" style="margin:0; padding:0; background:#1a1a1a;">
 <!-- Preheader (hidden) -->
 <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">Save the Date! World Food Trucks Goes Solar on Oct. 20</div>
 <!-- Wrapper -->
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#000000;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#1a1a1a;">
 <tr>
 <td align="center">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" class="fluid" style="width:640px; max-width:640px;">
 <!-- Eyebrow -->
 <tr>
-<td class="px-24" style="padding:12px 32px; background:#000000; color:#c9c9c9; font-size:12px; letter-spacing:.06em; text-transform:uppercase;">
+<td class="px-24" style="padding:12px 32px; background:#1a1a1a; color:#c9c9c9; font-size:12px; letter-spacing:.06em; text-transform:uppercase;">
               VIP Invitation • World Food Trucks • Kissimmee, FL
 </td>
 </tr>
 <!-- Header / Logo Bar -->
 <tr>
-<td style="background:#0a0a0a;">
+<td style="background:#232323;">
 <table role="presentation" width="100%">
 <tr>
 <td class="px-24 py-20" style="padding:24px 32px; vertical-align:middle;">
@@ -112,10 +112,10 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 </tr>
 <!-- Hero (bulletproof background) -->
 <tr>
-<td style="background:#0a0a0a;">
+<td style="background:#232323;">
 <!--[if gte mso 9]>
               <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:640px;height:280px;">
-                <v:fill type="frame" src="assets/pic.jpg" color="#0a0a0a"/>
+                <v:fill type="frame" src="assets/pic.jpg" color="#232323"/>
                 <v:textbox inset="0,0,0,0">
               <![endif]-->
 <div style="background-image:url('assets/pic.jpg'); background-size:cover; background-position:center; background-repeat:no-repeat; width:100%; max-width:640px;">
@@ -136,7 +136,7 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 </tr>
 <!-- Event Details + Stats -->
 <tr>
-<td class="px-24" style="padding:28px 32px; background:#0a0a0a;">
+<td class="px-24" style="padding:28px 32px; background:#232323;">
 <table role="presentation" width="100%">
 <tr>
 <!-- Left column -->
@@ -206,78 +206,78 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 auto;">
 <tr>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 </tr>
 <tr>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 <td>
-<div class="truck-slot">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="display:inline-block; text-decoration:none;" aria-label="Learn about our solar farm"><div class="truck-slot">
 <div class="cab-l"></div>
 <div class="cab-r"></div>
 <div class="window"></div>
 <div class="left-wheel wheel"></div>
 <div class="right-wheel wheel"></div>
-</div>
+</div></a>
 </td>
 </tr>
 </table>
@@ -298,7 +298,7 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 </tr>
 </table>
 </label>
-<div class="building">
+<a href="https://www.worldfoodtrucks.com/solidcloud" target="_blank" style="text-decoration:none; display:block;" aria-label="Solar farm details"><div class="building">
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" class="roof-table">
 <tr>
 <td class="roof-cell"><div class="roof-panel"></div></td>
@@ -326,7 +326,7 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 </tr>
 </table>
 <p class="text-muted" style="margin:8px 0 0 0; font-size:11px;">Visitors Flea Market — Solar Rooftop</p>
-</div>
+</div></a>
 </td>
 </tr>
 </table>
@@ -339,7 +339,7 @@ body, table, td, p, a, li, h1, h2, h3 { font-family: Helvetica, Arial, "Segoe UI
 </tr>
 <!-- Footer -->
 <tr>
-<td class="px-24" style="padding:26px 32px; background:#000000;">
+<td class="px-24" style="padding:26px 32px; background:#1a1a1a;">
 <table role="presentation" width="100%">
 <tr>
 <td style="text-align:center;">
